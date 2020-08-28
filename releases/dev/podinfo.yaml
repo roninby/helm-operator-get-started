@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: harbor.gcpslab.xyz/library/stefanprodan/podinfo
-      tag: dev-hdtwcel9
+      tag: dev-hwivrkkz
     replicaCount: 1
     hpa:
       enabled: false
