@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-repository="stefanprodan/podinfo"
+repository="harbor.gcpslab.xyz/library/stefanprodan/podinfo"
 branch="master"
 version=""
 commit=$(cat /dev/urandom | env LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1 | awk '{print tolower($0)}')
@@ -22,7 +22,7 @@ shift $((OPTIND-1))
 
 if [ -z "${version}" ]; then
     image="${repository}:${branch}-${commit}"
-    version="0.4.0"
+    version="0.4.11"
 else
     image="${repository}:${version}"
 fi
